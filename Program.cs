@@ -18,7 +18,8 @@ namespace Cronometro
             
             string data = Console.ReadLine().ToLower();
             char type = char.Parse(data.Substring(data.Length - 1,1));
-            Console.WriteLine(data);
+            int time = int.Parse(data.Substring(0, data.Length -1));
+            Console.WriteLine(time);
             Console.Write(type);
 
 
